@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Insta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gym">SHOULDER &amp; BACK BEGINNER</string>
+
+
+    <string name="very_severely_underweight">Very severely underweight</string>
+    <string name="underweight">Under weight</string>
+
+    <string name="normal">Normal</string>
+    <string name="overweight">Over Weight</string>
+
+    <string name="obese_class_i">obese_class_i</string>
+    <string name="obese_class_ii">Severely Underweight</string>
+
+    <string name="obese_class_iii">Severely Underweight</string>
+
+    <string name="severely_underweight">Severely Under Weight  </string>
+</resources>

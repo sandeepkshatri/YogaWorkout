@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="navigationTheme">
+        <!--color when selected -->
+        <item name="color">@color/colorBlack</item>
+        <!--bg when selected -->
+        <item name="colorPrimaryDark">#FFB300</item>
+    </style>
+
+        <!-- Base application theme. -->
+        <style name="ChallangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorBlack</item>
+            <item name="colorPrimaryDark">@color/colorBlack</item>
+            <item name="colorAccent">#FFB300</item>
+        </style>
+    </resources>
+

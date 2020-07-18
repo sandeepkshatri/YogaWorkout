@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.appbar.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/bar"
+     android:background="?android:attr/windowBackground">
+
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="?android:attr/windowBackground">
+
+     </androidx.appcompat.widget.Toolbar>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="65dp"
+         android:background="#FFB300">
+
+         <ImageView
+             android:layout_width="53dp"
+             android:layout_height="match_parent"
+             android:layout_alignParentStart="true"
+             android:layout_marginStart="20dp"
+             android:padding="5dp"
+             android:src="@drawable/logo_homepage" />
+
+         <ImageView
+             android:id="@+id/challenge"
+             android:layout_width="48dp"
+             android:layout_height="60dp"
+             android:padding="5dp"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="22dp"
+             android:src="@drawable/gym" />
+
+     </RelativeLayout>
+
+ </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="53dp" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout"
+        tools:opendrawer="start">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:theme="@style/navigationTheme"
+            app:headerLayout="@layout/slide_header"
+            app:menu="@menu/side_navigation"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>
